@@ -3,7 +3,8 @@ class person
 {
 	Scanner sc=new Scanner (System.in);
 	String name;
-	int age, c_no;
+	int age;
+	long c_no;
 	public void info()
 	{
 		System.out.println("Enter your name: ");
