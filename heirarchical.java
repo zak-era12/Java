@@ -12,7 +12,7 @@ class person
 		System.out.println("Enter your age: ");
 		age=sc.nextInt();
 		System.out.println("Enter your contact number: ");
-		c_no=sc.nextInt();
+		c_no=sc.nextLong();
 	}
 }
 class student extends person
