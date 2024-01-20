@@ -11,7 +11,7 @@ class MethodOverriding
   }
   public static void main(String[] args)
   {
-    MethodOverridingDemo obj = new MethodOverridingDemo();
+    MethodOverriding obj = new MethodOverriding();
     obj.multiply(8,5);   
     obj.multiply(4,6,2);   
   }
