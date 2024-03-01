@@ -11,7 +11,7 @@ Class.forName("com.mysql.cj.jdbc.Driver");
                 Statement stmt=con.createStatement();
                 ResultSet rs=stmt.executeQuery("select * from student_table");
                 while(rs.next())
-                    System.out.println(rs.getInt(1)+"  "+rs.getString(2)+"  "+rs.getString(3)+"   "+rs.getString(4));  
+                    System.out.println(rs.getInt(1)+"          "+rs.getString(2)+"          "+rs.getString(3)+"           "+rs.getString(4));  
 con.close();
             }
 }catch( ClassNotFoundException | SQLException e){ System.out.println(e);}  
