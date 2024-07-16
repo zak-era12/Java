@@ -1,18 +1,21 @@
-//Method overriding
-class MethodOverriding
-{
-  void multiply(int a, int b)
-  {
-    System.out.println("Result is"+(a*b)) ;
-  }
-  void multiply(int a, int b,int c)
-  {
-    System.out.println("Result is"+(a*b*c));
-  }
-  public static void main(String[] args)
-  {
-    MethodOverriding obj = new MethodOverriding();
-    obj.multiply(8,5);   
-    obj.multiply(4,6,2);   
-  }
+class Parent {
+    void display() {
+        System.out.println("Parent's display method");
+    }
+}
+
+class Child extends Parent {
+    void display() {
+        System.out.println("Child's display method");
+    }
+}
+
+public class MethodOverriding {
+    public static void main(String[] args) {
+        Parent parent = new Parent();
+        parent.display();
+
+        Child child = new Child();
+        child.display();
+    }
 }
